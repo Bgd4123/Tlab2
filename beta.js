@@ -14,10 +14,10 @@ function on_device_orientation(evt)
 	var canvas = document.getElementById("canvas");
 	var context = canvas.getContext("2d");
 	var centru = {x:canvas.width/2, y:canvas.height/2}
-	var latura_patrat = 50;
+	var latura_patrat = 100;
 
 	context.clearRect(0, 0, canvas.width, canvas.height);
 	context.fillStyle = "#00cc00";
 	context.beginPath();
-	context.fillRect(180, 150, evt.gamma, 50);
+	context.fillRect(240, 200, evt.gamma, 100);
 }
